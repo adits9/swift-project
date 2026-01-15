@@ -59,41 +59,6 @@ Views → ViewModels → Repositories → Database
 - **Repositories**: Data access layer with CRUD operations
 - **Database**: GRDB-based local persistence
 
-### Project Structure
-```
-PocketPad/
-├── PocketPadApp.swift          # App entry point
-├── Core/
-│   ├── AppState.swift          # Global app state
-│   ├── Config.swift            # Configuration constants
-│   └── RootView.swift          # Root navigation coordinator
-├── Features/
-│   ├── Authentication/
-│   │   ├── Views/
-│   │   └── ViewModels/
-│   ├── Dashboard/
-│   ├── Schedule/
-│   ├── LunchMenu/
-│   ├── Extracurriculars/
-│   ├── Email/
-│   ├── Calendar/
-│   └── SocialLinks/
-├── Data/
-│   ├── Models/                 # Data models (GRDB FetchableRecord/PersistableRecord)
-│   ├── Repositories/           # Data access layer
-│   └── Database/
-│       └── DatabaseManager.swift
-├── UI/
-│   └── Components/             # Reusable UI components
-└── Resources/
-    └── lunch_menu.json         # Seed data for lunch menu
-
-PocketPadTests/
-├── AuthenticationTests.swift
-├── ScheduleTests.swift
-└── LunchMenuTests.swift
-```
-
 ## Technology Stack
 
 - **Language**: Swift 5.9+
@@ -104,10 +69,6 @@ PocketPadTests/
 - **Concurrency**: async/await
 - **Testing**: XCTest
 
-## Dependencies
-
-- [GRDB.swift](https://github.com/groue/GRDB.swift) (6.24.0+) - SQLite database toolkit
-
 ## Database Schema
 
 ### Tables
@@ -117,79 +78,6 @@ PocketPadTests/
 - **extracurriculars**: Activities (id, name, description, meetingTime, location, contactEmail, category)
 - **staff_directory**: Staff contacts (id, name, email, role, department, subjectTaught, phoneExtension)
 - **user_favorites**: User bookmarks (id, userId, itemType, itemId, createdAt)
-
-## Setup Instructions
-
-### Prerequisites
-- macOS 13.0 or later
-- Xcode 15.0 or later
-- Swift 5.9 or later
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   cd /Users/aditsaxena/Documents/swift-training/swift-project
-   ```
-
-2. **Open in Xcode**
-   ```bash
-   open Package.swift
-   ```
-   
-   Or create a new iOS App project in Xcode and add the source files.
-
-3. **Install Dependencies**
-   
-   If using Swift Package Manager:
-   - In Xcode: File → Add Package Dependencies
-   - Add: `https://github.com/groue/GRDB.swift.git`
-   - Version: 6.24.0 or later
-
-4. **Build the project**
-   - Select a simulator or device
-   - Press Cmd+B to build
-
-5. **Run the app**
-   - Press Cmd+R to run
-
-### Creating an Xcode Project (Alternative)
-
-If you need to create a full Xcode project:
-
-1. Open Xcode
-2. File → New → Project
-3. Select "iOS App"
-4. Product Name: PocketPad
-5. Interface: SwiftUI
-6. Language: Swift
-7. Click Create
-8. Add GRDB dependency via SPM (File → Add Package Dependencies)
-9. Copy all source files into the project maintaining the folder structure
-10. Add `lunch_menu.json` to the project resources
-
-## Running Tests
-
-1. In Xcode, press Cmd+U to run all tests
-2. Or select Product → Test from the menu
-3. View test results in the Test Navigator (Cmd+6)
-
-## Configuration
-
-Edit [Config.swift](PocketPad/Core/Config.swift) to customize:
-- School name
-- Calendar URL
-- Social media links
-- Schedule periods
-
-## Seed Data
-
-The app includes seed data for:
-- **Extracurriculars**: 6 sample activities (Robotics, Drama, Debate, etc.)
-- **Staff Directory**: 6 staff members (teachers, counselors, administrators)
-- **Lunch Menu**: 10 days of sample menus (loaded from JSON)
-
-This data is automatically seeded on first launch.
 
 ## Usage
 
@@ -221,29 +109,10 @@ This data is automatically seeded on first launch.
 3. Tap on a staff member's email
 4. Compose your message in iOS Mail
 
-## Accessibility
-
-The app includes accessibility labels for:
-- All interactive buttons
-- Form fields
-- Navigation elements
-
-VoiceOver and other assistive technologies are supported.
-
-## Known Limitations
-
-- Email feature requires iOS Mail app to be configured
-- Lunch menu data is currently static (loaded from JSON)
-- Social links and calendar URL are placeholder examples
-- No backend server (all data is local)
 
 ## Future Enhancements
 
 - [ ] Push notifications for schedule reminders
-- [ ] Export schedule to iOS Calendar
 - [ ] Dark mode refinements
 - [ ] iPad-optimized layouts
-- [ ] Cloud sync with backend server
-- [ ] Real-time lunch menu updates
 - [ ] Student-to-student messaging
-- [ ] Homework/assignment tracking
