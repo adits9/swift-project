@@ -1,0 +1,82 @@
+[
+  {
+    "id": "lunch-mon-1",
+    "date": "2026-01-19T12:00:00Z",
+    "mainDish": "Chicken Alfredo Pasta",
+    "sides": ["Caesar Salad", "Garlic Bread", "Fresh Fruit"],
+    "dessert": "Chocolate Chip Cookie",
+    "vegetarianOption": "Vegetable Alfredo Pasta"
+  },
+  {
+    "id": "lunch-tue-1",
+    "date": "2026-01-20T12:00:00Z",
+    "mainDish": "Beef Tacos",
+    "sides": ["Spanish Rice", "Refried Beans", "Salsa & Chips"],
+    "dessert": "Churros",
+    "vegetarianOption": "Bean and Cheese Tacos"
+  },
+  {
+    "id": "lunch-wed-1",
+    "date": "2026-01-21T12:00:00Z",
+    "mainDish": "Pepperoni Pizza",
+    "sides": ["Garden Salad", "Corn", "Apple Slices"],
+    "dessert": "Ice Cream Cup",
+    "vegetarianOption": "Cheese Pizza"
+  },
+  {
+    "id": "lunch-thu-1",
+    "date": "2026-01-22T12:00:00Z",
+    "mainDish": "Grilled Chicken Sandwich",
+    "sides": ["French Fries", "Coleslaw", "Orange Slices"],
+    "dessert": "Brownie",
+    "vegetarianOption": "Veggie Burger"
+  },
+  {
+    "id": "lunch-fri-1",
+    "date": "2026-01-23T12:00:00Z",
+    "mainDish": "Fish Sticks",
+    "sides": ["Mac and Cheese", "Green Beans", "Fruit Cup"],
+    "dessert": "Jello",
+    "vegetarianOption": "Grilled Cheese Sandwich"
+  },
+  {
+    "id": "lunch-mon-2",
+    "date": "2026-01-26T12:00:00Z",
+    "mainDish": "Spaghetti with Meatballs",
+    "sides": ["Caesar Salad", "Breadstick", "Mixed Vegetables"],
+    "dessert": "Sugar Cookie",
+    "vegetarianOption": "Marinara Pasta"
+  },
+  {
+    "id": "lunch-tue-2",
+    "date": "2026-01-27T12:00:00Z",
+    "mainDish": "BBQ Chicken",
+    "sides": ["Mashed Potatoes", "Corn on the Cob", "Dinner Roll"],
+    "dessert": "Fruit Parfait",
+    "vegetarianOption": "BBQ Tofu"
+  },
+  {
+    "id": "lunch-wed-2",
+    "date": "2026-01-28T12:00:00Z",
+    "mainDish": "Hamburger",
+    "sides": ["Tater Tots", "Pickles", "Watermelon"],
+    "dessert": "Rice Krispie Treat",
+    "vegetarianOption": "Black Bean Burger"
+  },
+  {
+    "id": "lunch-thu-2",
+    "date": "2026-01-29T12:00:00Z",
+    "mainDish": "Chicken Tenders",
+    "sides": ["French Fries", "Carrot Sticks", "Banana"],
+    "dessert": "Soft Pretzel",
+    "vegetarianOption": "Veggie Spring Rolls"
+  },
+  {
+    "id": "lunch-fri-2",
+    "date": "2026-01-30T12:00:00Z",
+    "mainDish": "Cheese Quesadilla",
+    "sides": ["Black Beans", "Mexican Rice", "Guacamole"],
+    "dessert": "Flan",
+    "vegetarianOption": "Cheese Quesadilla"
+  }
+]
